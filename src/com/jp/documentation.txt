@@ -1,0 +1,33 @@
+  /*
+ * Program written by: Joseph Phan
+ * File Name: optimize
+ * File Description: Given a Database, this program will find the top K sets under the given error accuracy
+ * that gives the greatest objective function outputs:
+ *
+ * How data is stored:
+ * 		Each row is a transaction. The first element of a row will represent the frequency of occurrence of
+ * 		that transaction. Each item is separated by a space. There will no spaces in the beginning or end of
+ * 		a transaction.
+ *
+ * Terminology:
+ * item = one value or element from a transaction
+ * transaction = one set of items or a "row" in the database.
+ * possible points = number of elements in a transaction that can possibly contribute to increase the value
+ *
+ * Process:
+ * 1) Reads in database from a text file and saves the data needed. note that data must
+ *    be stored in a certain format. first value is number of occurrences of the transactions
+ *    followed by a space and then the transaction is next. each item should be separated by a space
+ *
+ * 2) Saves data from the text file - frequency of each item, location each item occurs, number of transactions
+ *    and number of unique values and then sort all items highest number of occurrences to lowest number of
+ *    occurrences in an array
+ *
+ * 3) Performs Depth first search type algorithm and proning to search through possible sets
+ *
+ * 4) At each addition of a new element, the search process first finds the new objective function output
+ * 	  determines which transactions will never improve the objective function output and removes them. Then performs
+ * 	  an upper bound calculation to determine whether or not the search process should continue down in a depth manner
+ *
+ * 5) After search complete, this program will display the results.
+ */
