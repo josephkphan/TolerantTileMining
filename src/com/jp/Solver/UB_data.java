@@ -4,10 +4,10 @@ package com.jp.Solver;
  * Created by jphan on 10/7/16.
  */
 public class UB_data implements Comparable<UB_data>{
-    double point;			//intersection - error
-    double counter;			//used to keep track of points given during upper bound process
-    double possible;		//max amount of points a transaction can increase by
-    double error;			//used for case EC = -1 (100% accuracy)
+    private double point;			//intersection - error
+    private double counter;			//used to keep track of points given during upper bound process
+    private double possible;		//max amount of points a transaction can increase by
+    private double error;			//used for case EC = -1 (100% accuracy)
 
     public UB_data(double i, double e, double m){
         error = e;

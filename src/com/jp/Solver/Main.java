@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
-        Optimizer O = new Optimizer();
+        MinMaxSolver O = new MinMaxSolver();
         O.User_Set_Parameters();
         O.initalize();
         O.depth_first_search();
