@@ -1,6 +1,6 @@
 # TolerantTileMining
 
-Worked with Dr. Haibing Lu to create the data mining algorithm
+Worked with Dr. Haibing Lu from Santa Clara University
 
 ### Overview
 This program can determine the top trends from a store given a database on their transactions. It can find number of specified top trends (ex: the top 10) or the top trends with exactly 5 items
